@@ -2,10 +2,16 @@
 /* CSS Document */
 body{
 
-	background-color: #099;
+	background-color: #8888ff;
 	
 }
 #restart ul img{
-        padding-top: 250px;
-		text-decoration:none;
+   display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+background-color: #8888ff	
 }
