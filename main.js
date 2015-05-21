@@ -13,6 +13,16 @@ var mainState = {
 
     // Function for loading all assets of the game (called only once)
     preload: function() { 
+	
+        if(!game.device.desktop){
+            game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+            game.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
+            game.scale.setScreenSize(true);
+        }else{
+            game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
+            game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+            game.scale.setScreenSize(true);
+        }
 		game.load.image('bird','assets/bird.png');
 		game.load.image('pipe2','assets/pipe2.png');
 		game.load.image('pipe','assets/pipe.png');
